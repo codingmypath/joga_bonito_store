@@ -62,11 +62,11 @@ const NavButton = styled.button`
  width: 40px;
  height: 40px;
  border: 0;
- color: white;
+ color: black;
  cursor: pointer;
  position: relative;
  z-index: 3;
- padding-top: 10px;
+ padding-top: 15px;
  @media screen and (min-width: 768px) {
     display: none;
  }
