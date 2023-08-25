@@ -46,12 +46,13 @@ const StyledNav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-    display: block;
+    display: flex;
     color: #aaa;
     text-decoration: none;
     padding: 10px 0;
     @media screen and (min-width: 768px) {
         padding: 0;
+        padding-top: 20px;
     }
 
 `;
@@ -73,9 +74,10 @@ const NavButton = styled.button`
 const LogoLink = styled(Link)`
 display: flex;
 align-items: center;
+z-index: 3;
  img {
     height: 60px;
-    width: 65px;
+    width: 70px;
  }
 `;
 
