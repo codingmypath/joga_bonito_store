@@ -7,7 +7,7 @@ import { CartContext } from "./CartContext";
 import BarsIcon from "./icons/Bars";
 
 const StyledHeader = styled.header`
-    background-color: #222;
+    background-color: #5CDB95;
     padding: 
 `;
 
@@ -37,7 +37,7 @@ const StyledNav = styled.nav`
     left: 0;
     right: 0;
     padding: 70px 20px 20px;
-    background-color: #222;
+    background-color: #5CDB95;
     @media screen and (min-width: 768px) {
         display: flex;
         position: static;
@@ -47,7 +47,7 @@ const StyledNav = styled.nav`
 
 const NavLink = styled(Link)`
     display: flex;
-    color: #aaa;
+    color: black;
     text-decoration: none;
     padding: 10px 0;
     @media screen and (min-width: 768px) {
@@ -59,13 +59,14 @@ const NavLink = styled(Link)`
 
 const NavButton = styled.button`
  background-color: transparent;
- width: 30px;
- height: 30px;
+ width: 40px;
+ height: 40px;
  border: 0;
  color: white;
  cursor: pointer;
  position: relative;
  z-index: 3;
+ padding-top: 10px;
  @media screen and (min-width: 768px) {
     display: none;
  }
@@ -76,8 +77,8 @@ display: flex;
 align-items: center;
 z-index: 3;
  img {
-    height: 60px;
-    width: 70px;
+    height: 70px;
+    width: 80px;
  }
 `;
 
@@ -89,7 +90,7 @@ export default function Header() {
         <StyledHeader>
             <Center>
                 <Wrapper>
-                    <LogoLink href={'/'}><img src="/joga_invert.png" alt="logo" /></LogoLink>
+                    <LogoLink href={'/'}><img src="/joga_logo.png" alt="logo" /></LogoLink>
                     <StyledNav mobileNavActive={mobileNavActive}>
                         <NavLink href={'/'}>Home</NavLink>
                         <NavLink href={'/products'}>All products</NavLink>
