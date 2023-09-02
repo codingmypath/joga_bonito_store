@@ -19,7 +19,7 @@ export default async function AllProductsPage({all}) {
 
   const allProductData =  allProducts(all);
   const allUserProduct = await allProductData;
-  console.log(allUserProduct)
+  // console.log(allUserProduct)
 
 
   // const newProductData =  products(newProducts);
